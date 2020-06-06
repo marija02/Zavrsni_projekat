@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05E33B3A-A90D-49E5-BC7E-4399CA326C01}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AppZaNaručivanjeHrane</RootNamespace>
+    <AssemblyName>AppZaNaručivanjeHrane</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\Guna.UI-Framework-Lib-master\Guna UI Activation\Guna UI Activation\bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alkohol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alkohol.Designer.cs">
+      <DependentUpon>alkohol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="kafa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kafa.Designer.cs">
+      <DependentUpon>kafa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logIn.Designer.cs">
+      <DependentUpon>logIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mail.Designer.cs">
+      <DependentUpon>mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="milksejk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="milksejk.Designer.cs">
+      <DependentUpon>milksejk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="palacinke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="palacinke.Designer.cs">
+      <DependentUpon>palacinke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="piletina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="piletina.Designer.cs">
+      <DependentUpon>piletina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pizza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pizza.Designer.cs">
+      <DependentUpon>pizza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="riba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="riba.Designer.cs">
+      <DependentUpon>riba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="salata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salata.Designer.cs">
+      <DependentUpon>salata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendvici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendvici.Designer.cs">
+      <DependentUpon>sendvici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sladoled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sladoled.Designer.cs">
+      <DependentUpon>sladoled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sokovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sokovi.Designer.cs">
+      <DependentUpon>sokovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spageti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spageti.Designer.cs">
+      <DependentUpon>spageti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="torta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="torta.Designer.cs">
+      <DependentUpon>torta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl10.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl10.Designer.cs">
+      <DependentUpon>UserControl10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl11.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl11.Designer.cs">
+      <DependentUpon>UserControl11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl12.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl12.Designer.cs">
+      <DependentUpon>UserControl12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl13.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl13.Designer.cs">
+      <DependentUpon>UserControl13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl14.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl14.Designer.cs">
+      <DependentUpon>UserControl14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl15.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl15.Designer.cs">
+      <DependentUpon>UserControl15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl16.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl16.Designer.cs">
+      <DependentUpon>UserControl16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl17.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl17.Designer.cs">
+      <DependentUpon>UserControl17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl18.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl18.Designer.cs">
+      <DependentUpon>UserControl18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl3.Designer.cs">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl4.Designer.cs">
+      <DependentUpon>UserControl4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl5.Designer.cs">
+      <DependentUpon>UserControl5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl6.Designer.cs">
+      <DependentUpon>UserControl6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl7.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl7.Designer.cs">
+      <DependentUpon>UserControl7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl8.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl8.Designer.cs">
+      <DependentUpon>UserControl8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl9.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl9.Designer.cs">
+      <DependentUpon>UserControl9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vafle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vafle.Designer.cs">
+      <DependentUpon>vafle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vocniKup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vocniKup.Designer.cs">
+      <DependentUpon>vocniKup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="alkohol.resx">
+      <DependentUpon>alkohol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kafa.resx">
+      <DependentUpon>kafa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logIn.resx">
+      <DependentUpon>logIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mail.resx">
+      <DependentUpon>mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="milksejk.resx">
+      <DependentUpon>milksejk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="palacinke.resx">
+      <DependentUpon>palacinke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="piletina.resx">
+      <DependentUpon>piletina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pizza.resx">
+      <DependentUpon>pizza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="riba.resx">
+      <DependentUpon>riba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="salata.resx">
+      <DependentUpon>salata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendvici.resx">
+      <DependentUpon>sendvici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sladoled.resx">
+      <DependentUpon>sladoled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sokovi.resx">
+      <DependentUpon>sokovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spageti.resx">
+      <DependentUpon>spageti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="torta.resx">
+      <DependentUpon>torta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl10.resx">
+      <DependentUpon>UserControl10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl11.resx">
+      <DependentUpon>UserControl11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl12.resx">
+      <DependentUpon>UserControl12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl13.resx">
+      <DependentUpon>UserControl13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl14.resx">
+      <DependentUpon>UserControl14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl15.resx">
+      <DependentUpon>UserControl15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl16.resx">
+      <DependentUpon>UserControl16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl17.resx">
+      <DependentUpon>UserControl17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl18.resx">
+      <DependentUpon>UserControl18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl3.resx">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl4.resx">
+      <DependentUpon>UserControl4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl5.resx">
+      <DependentUpon>UserControl5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl6.resx">
+      <DependentUpon>UserControl6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl7.resx">
+      <DependentUpon>UserControl7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl8.resx">
+      <DependentUpon>UserControl8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl9.resx">
+      <DependentUpon>UserControl9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vafle.resx">
+      <DependentUpon>vafle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vocniKup.resx">
+      <DependentUpon>vocniKup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
